@@ -10,6 +10,7 @@ Welcome to super-waffle's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   opa.rst
 
 
 Indices and tables
