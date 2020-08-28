@@ -21,10 +21,15 @@ properly set. You should be able to run the "tox" command from now on.
 `tox -e docs`
 
 This builds the docs in docs/build/html.
-You can seem them by issuing `python3 -m http.server` and go with your
-browser on http://127.0.0.1:8000, or `xdg-open docs/build/html/index.html`.
 
-The docs source is in docs/source/ obviously.
+To read them:
+
+* locally, run `xdg-open docs/build/html/index.html`.
+* remotely, go into your built folder `docs/build/html`,
+  then run `python3 -m http.server`. Point then your browser to your machine,
+  like `http://127.0.0.1:8000`.
+
+The docs source is in docs/source/ (obviously?!).
 
 If you are not familiar with restructured text, please have a looksie in here:
 https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
