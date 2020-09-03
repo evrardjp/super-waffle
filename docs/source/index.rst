@@ -11,6 +11,7 @@ Welcome to super-waffle's documentation!
    :caption: Contents:
 
    opa.rst
+   trivy.rst
 
 
 Indices and tables
