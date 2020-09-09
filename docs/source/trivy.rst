@@ -26,6 +26,16 @@ I've packaged trivy on my `home project`_. You can simply install the binary fro
 
 .. _`home project`: https://build.opensuse.org/package/show/home:mssola/trivy
 
+Onboarding material
+===================
+
+They are following the structure for open source projects recommended by Github. Thus, they have a `README.md`_ and a `CONTRIBUTING.md`_ files that document how to build the project and how to get involved with it. They don't mention, though, where the database is located nor they mention internal libraries which have been also open sourced by them. The database is easily found on the `trivy-db`_ project, and the other libraries also live on their `organization page`_. Everything is written in Go.
+
+.. _`README.md`: https://github.com/aquasecurity/trivy/blob/master/README.md
+.. _`CONTRIBUTING.md`: https://github.com/aquasecurity/trivy/blob/master/CONTRIBUTING.md
+.. _`trivy-db`: https://github.com/aquasecurity/trivy-db
+.. _`organization page`: https://github.com/aquasecurity
+
 CI goodies
 ==========
 
