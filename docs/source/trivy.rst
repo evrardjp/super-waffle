@@ -2,9 +2,22 @@
 trivy
 #####
 
+Trivy is a vulnerability scanner for containers and other artifacts, which is specifically tailored for CI. In short, it's a static analysis tool that uses its own database to detect vulnerabilities in Docker images and other container formats, while being able to detect them in intermediate layers as well.
+
 Check their `Github page`_ file for more info. Otherwise, the most relevant stuff is on this document.
 
 .. _`Github page`: https://github.com/aquasecurity/trivy
+
+How does it fit with the ecosystem
+==================================
+
+Trivy has been developed by the same company as other tools such as `kube-hunter`_, but it has a completely different scope than these set of tools (e.g. :code:`kube-bench`).
+
+The scope of this tool is limited to detect vulnerabilities from within Docker images and other container formats and their layers. Thus, you can think of it as a tool competing with Clair_ or Anchore_. You can take a look at a comparison with these tools on this document in the sections below.
+
+.. _`kube-hunter`: https://github.com/aquasecurity/kube-hunter
+.. _Clair: https://github.com/quay/clair
+.. _Anchore: https://github.com/anchore/anchore-engine
 
 Where to get it
 ===============
