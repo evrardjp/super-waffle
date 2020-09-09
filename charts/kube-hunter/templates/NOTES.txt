@@ -1,0 +1,5 @@
+1. Find the pod name by running:
+   kubectl describe job  {{ .Chart.Name }}
+
+2. View the hunt results:
+   kubectl logs <podname>

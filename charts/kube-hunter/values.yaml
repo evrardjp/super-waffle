@@ -1,0 +1,17 @@
+# Default values for kube-hunter.
+image:
+  repository: aquasec/kube-hunter
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: ""
+  args: ["--pod"]
+
+jobAnnotations: {}
+imagePullSecrets: []
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
