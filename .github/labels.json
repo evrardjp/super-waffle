@@ -1,0 +1,63 @@
+{
+  "labels": {
+    "autosquash": {
+      "name": "autosquash",
+      "colour": "#0000ff",
+      "description": "Triggers Autosquash tool (default)"
+    },
+    "wip" :{
+      "name": "WIP",
+      "colour": "#ff9900",
+      "description": "Work in progress"
+    },
+    "ci": {
+      "name": "ci",
+      "colour": "#0000ff",
+      "description": "CI related"
+    }
+  },
+  "issue": {
+    "ci": {
+      "requires": 1,
+      "conditions": [
+        {
+          "type": "titleMatches",
+          "pattern": "^ci"
+        }
+      ]
+    }
+  },
+  "pr": {
+    "autosquash": {
+      "requires": 1,
+      "conditions": [
+        {
+          "type": "isOpen",
+          "value": true
+        }
+      ]
+    },
+    "wip": {
+      "requires": 1,
+      "conditions": [
+        {
+          "type": "titleMatches",
+          "pattern": "/^wip:/i"
+        },
+        {
+          "type": "isDraft",
+          "value": true
+        }
+      ]
+    },
+    "ci": {
+      "requires": 1,
+      "conditions": [
+        {
+          "type": "branchMatches",
+          "pattern": "^ci\\/"
+        }
+      ]
+    }
+  }
+}
