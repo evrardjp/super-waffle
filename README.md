@@ -33,3 +33,15 @@ The docs source is in docs/source/ (obviously?!).
 
 If you are not familiar with restructured text, please have a looksie in here:
 https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
+
+## Step 4: Prepare your commit
+
+This repo uses semantic commits. If you write your commit well, there is
+_nothing_ to be done for releasing.
+
+Here is a link to the information you need to put in your commit message.
+
+https://www.conventionalcommits.org/en/v1.0.0/#summary
+
+Don't forget that commits should be explaining the context of the WHY
+you do something.
