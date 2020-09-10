@@ -1,0 +1,4 @@
+# Always validates PRs texts, as this will be the base for auto-squash
+titleOnly: true
+# Never validates commits. We trust the reviewers
+commitsOnly: false
