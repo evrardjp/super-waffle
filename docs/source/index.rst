@@ -12,6 +12,7 @@ Welcome to super-waffle's documentation!
 
    opa.rst
    trivy.rst
+   kube-hunter.rst
 
 
 Indices and tables
